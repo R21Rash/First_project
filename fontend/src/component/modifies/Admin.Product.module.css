@@ -1,0 +1,310 @@
+.navbar {
+  background-color: #dce1e6; /* Dark background color */
+  position: relative; /* Add this line */
+  transition: background-color 0.3s ease-in-out; /* Add transition to background color */
+}
+
+.navbarToggler {
+  border: none;
+}
+
+/* Navigation items styles */
+.navbarNav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin-right: 15px;
+}
+
+.navLink {
+  color: #4d4c4c; /* White text color */
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease-in-out; /* Add transition to text color */
+}
+
+.navLink:hover {
+  color: #adb5bd; /* Lighter color on hover */
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* Right section styles */
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-left: 750px;
+  transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+}
+
+.searchInput {
+  padding: 8px;
+  border: 1px solid #ced4da; /* Bootstrap's light gray border color */
+  border-radius: 20px;
+  width: 200px;
+}
+.micButton {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  margin-top: -5px;
+  position: absolute;
+  left: 1280px;
+  transition: margin-top 0.3s ease-in-out;
+}
+
+
+.micButton:hover {
+  background-color: transparent;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Let the logo container grow to fill the available space */
+  margin-top: -70px; /* Adjust margin-top as needed */
+  transition: margin-top 0.3s ease-in-out; /* Add transition to margin-top */
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  max-width: 250px;
+  max-height: 120px;
+  margin-left: -60px;
+  margin-top: -20px;
+  transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+}
+
+.color {
+ 
+  background: linear-gradient(to top, #333, #fff);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbarNav {
+    flex-direction: column;
+  }
+
+  .navList {
+    margin-top: 10px;
+  }
+
+  .navItem {
+    margin-bottom: 10px;
+  }
+
+  .rightt {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: auto;
+  }
+
+  .searchBar {
+    margin-left: auto !important;
+    transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+  }
+
+  .micButton {
+    margin-left: 5px !important;
+    transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+  }
+
+  .loginButton {
+    margin-right: 200px !important;
+    transition: margin-right 0.3s ease-in-out; /* Add transition to margin-right */
+  }
+
+  .logoContainer {
+    margin-top: initial;
+    transition: margin-top 0.3s ease-in-out; /* Add transition to margin-top */
+  }
+
+  .logo {
+    margin-left: initial;
+    transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+  }
+}
+.loginButton {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 15px;
+  background: linear-gradient(-45deg, #f8f9fa, #000000);
+  margin-left: 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition to background color and text color */
+}
+
+.loginButton:hover {
+  background-color: #ffffff;
+  color: #343a40; /* Dark background color */
+}
+
+  
+    
+  
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Reduced the gap between products */
+    margin-top: 70px;
+    justify-content: space-between; /* Align cards with space between */
+    text-decoration: none;
+  }
+  
+  .product {
+    border: 2px solid #e3dfdf; /* Lighter border color */
+    background-color: #d9e7e6;
+    padding: 15px; /* Adjusted padding for better spacing */
+    width: calc(25% - 20px); /* Adjusted width for 4 products in one line with reduced gap */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced box shadow */
+    text-decoration: none;
+  }
+  
+  .product:hover {
+    transform: scale(1.05); /* Slightly increased scaling on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly increased box shadow on hover */
+  }
+  
+  .product img {
+    width: 100%;
+    height: 120px; /* Reduced image height for a better display */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    margin-bottom: 10px; /* Adjusted margin */
+  }
+  
+  .product h3 {
+    font-size: 16px; /* Reduced font size for product title */
+    margin-bottom: 8px; /* Adjusted margin */
+    color: #1a1a1a; /* Darker text color */
+  }
+  
+  .product p {
+    font-size: 12px; /* Reduced font size for product description */
+    color: #555; /* Darker text color */
+    margin-bottom: 10px; /* Adjusted margin */
+  }
+  
+  .productPrice {
+    font-size: 14px; /* Reduced font size for price */
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px; /* Adjusted margin */
+  }
+  
+  
+  
+ /* Existing styles ... */
+
+.InputContainer {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(194, 183, 183);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-left: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+ 
+  color:#fff;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  outline: none;
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
+.inputt {
+  width: 200px; /* Adjust the width as needed */
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  caret-color: rgb(255, 81, 0);
+  background-color: transparent;
+  color: white; /* Text color */
+}
+
+.labelforsearch {
+  cursor: text;
+  padding: 0px 12px;
+}
+
+.searchIcon {
+  width: 13px;
+  fill: white; /* Icon color */
+}
+
+.border {
+  height: 40%;
+  width: 1.3px;
+  background-color: rgb(223, 223, 223);
+}
+
+.micIcon {
+  width: 12px;
+  fill: rgb(255, 81, 0); /* Mic icon color */
+}
+
+.micButton {
+  padding: 0px 15px 0px 12px;
+  border: none;
+  background-color: transparent;
+  height: 40px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.searchIcon path {
+  fill: rgb(114, 114, 114);
+}
+
+.micIcon path {
+  fill: rgb(255, 81, 0);
+}
+
+.micButton:hover {
+  background-color: rgb(255, 230, 230);
+  transition-duration: 0.3s;
+}
+
+
+
+#searchInput {
+  height: 30px;
+  padding: 5px;
+  margin-top: 0px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  width: 200px; /* Adjust the width as needed */
+  background-color: rgb(225, 220, 220);
+  color: rgb(231, 220, 220); /* Text color */
+}
+
+#searchInput::placeholder {
+  color: #999;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>ZxW</title>
+    <link rel="icon" href="res/Black Grey Modern Elegant Name Initials Logo.png" type="image/x-icon">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+   
+
+
+
+    <script>
+      const videos = [document.getElementById('video1'), document.getElementById('video2'), document.getElementById('video3')];
+      let currentVideoIndex = 0;
+  
+      function playNextVideo() {
+        // Hide the current video
+        videos[currentVideoIndex].style.display = 'none';
+  
+        // Move to the next video
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+  
+        // Show and play the next video
+        videos[currentVideoIndex].style.display = 'block';
+        videos[currentVideoIndex].play();
+      }
+  
+      // Initially, display and play the first video
+      videos[currentVideoIndex].style.display = 'block';
+      videos[currentVideoIndex].play();
+  
+      // Switch to the next video every 3 seconds
+      setInterval(playNextVideo, 3000);
+  
+      function scrollToSection() {
+        const section = document.getElementById('shop-section');
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
+
+<script>
+  function toggleSearch() {
+    var searchInput = document.querySelector('.search-input');
+    searchInput.style.display = (searchInput.style.display === 'none' || searchInput.style.display === '') ? 'block' : 'none';
+  }
+</script>
+<script>
+  function showModelDetails(name, description, price, imageUrl, img1, img2, img3, img4, img5) {
+    // Encode model details in the URL parameters
+    const encodedName = encodeURIComponent(name);
+    const encodedDescription = encodeURIComponent(description);
+    const encodedPrice = encodeURIComponent(price);
+    const encodedImageUrl = encodeURIComponent(imageUrl);
+    const encodedimg1 = encodeURIComponent(img1);
+    const encodedimg2 = encodeURIComponent(img2);
+    const encodedimg3 = encodeURIComponent(img3);
+    const encodedimg4 = encodeURIComponent(img4);
+    const encodedimg5 = encodeURIComponent(img5);
+
+    // Redirect to the model details page with the encoded parameters
+    window.location.href = `model-details.html?name=${encodedName}&description=${encodedDescription}&price=${encodedPrice}&imageUrl=${encodedImageUrl}&img1=${encodedimg1}&img2=${encodedimg2}&img3=${encodedimg3}&img4=${encodedimg4}&img5=${encodedimg5}`;
+  }
+</script>
+
+
+
+
+
+ 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

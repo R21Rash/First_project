@@ -1,0 +1,79 @@
+.body {
+  background-image: url('../res/w1.jpg');
+  background-size: cover;  /* Cover the entire container */
+  background-attachment: fixed;  /* Fixed background */
+  height: 100vh;
+  margin: 0;  /* Remove default margin to ensure full coverage */
+}
+
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 4px;
+}
+
+.hh2 {
+  text-align: center;
+  color: rgb(0, 0, 0); /* Set text color to white */
+  font-family: Arial, sans-serif;
+  margin-top: -10px;
+}
+
+.fform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.llabel {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: rgb(3, 3, 3); /* Set text color to white */
+}
+
+.iinput {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(10, 10, 10); /* Set border color to white for better visibility on black background */
+  border-radius: 3px;
+  color: rgb(5, 5, 5); /* Set text color to white */
+}
+
+.btn {
+  width: 60%;
+  padding: 10px;
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black; /* Set text color to black on hover for better visibility */
+}
+
+
+.registerContainer {
+  position: absolute;
+  
+  right: 550px;
+  max-width: 500px;
+ 
+  margin-top: 120px;
+  padding: 50px;
+  border: 1px solid #000;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+
+  }

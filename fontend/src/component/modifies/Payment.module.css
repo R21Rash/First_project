@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+ 
+}
+.cccontainer form .payment-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+.ccccontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+background: transparent;
+
+}
+
+.ccccontainer form {
+    padding: 20px;
+    background: #f0efef;
+    margin-top: -180px;
+    width: 700px;
+    height: 600px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Add box shadow here */
+  }
+  
+
+.ccccontainer form .roww{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.ccccontainer form .roww .coll{
+  flex:1 1 250px;
+}
+
+.ccccontainer form .roww .coll .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.ccccontainer form .roww .coll .inputBox{
+  margin:15px 0;
+  margin-top: -15px;
+}
+
+.ccccontainer form .roww .coll .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.ccccontainer form .roww .coll .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.ccccontainer form .roww .coll .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.ccccontainer form .roww .coll .flex{
+  display: flex;
+  gap:15px;
+}
+
+.ccccontainer form .roww .coll .flex .inputBox{
+  margin-top: 5px;
+}
+
+.ccccontainer form .roww .coll .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.ccccontainer form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.ccccontainer form .submit-btn:hover{
+  background: #2ecc71;
+}

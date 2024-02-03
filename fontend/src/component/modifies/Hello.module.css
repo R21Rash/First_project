@@ -1,0 +1,98 @@
+/* Create a specific class for the body styling */
+.bodyStyling {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    animation: slideshow 15s infinite;
+}
+
+@keyframes slideshow {
+    0%, 100% {
+        background-image: url('../res/w3.jpg');
+    }
+    50% {
+        background-image: url('../res/fb.jpg');
+    }
+}
+
+
+.h1Login {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 60%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    margin-bottom: 15px
+}
+
+.btn {
+    width: 60%;
+    padding: 5px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 0;
+    /* Add border-radius property with desired value */
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.forgotPassword {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.forgotPassword:hover {
+    color: whitesmoke;
+}
+
+.login {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fixedFooter {
+    color: #ddd;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f100; /* Replace with your desired background color */
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center;
+    /* Add other styling properties as needed */
+  }
+
+.logo img {
+    max-width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 10.5%;
+    transform: translate(0, -50%);
+    display: block;
+    margin-left: 50px;
+}
+

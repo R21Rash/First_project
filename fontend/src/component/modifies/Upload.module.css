@@ -1,0 +1,220 @@
+.uploadForm {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 90px;
+    background-color: #f1f2f3;
+  }
+  
+  .labelll {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .sselect,
+  .iinput,
+  .ttextarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  .color {
+    width: 100vw; /* Use viewport width to ensure it covers the entire screen horizontally */
+    height: 100vh; /* Use viewport height to ensure it covers the entire screen vertically */
+    margin: 0; /* Remove any default margin */
+    
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #333, #fff);
+  }
+  
+  
+  
+  
+  .confirmation-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #3c763d;
+    border-radius: 4px;
+    color: #3c763d;
+  }
+  .navbar {
+    background-color: #dce1e6; /* Dark background color */
+    position: relative; /* Add this line */
+    transition: background-color 0.3s ease-in-out; /* Add transition to background color */
+  }
+  
+  .navbarToggler {
+    border: none;
+  }
+  
+  /* Navigation items styles */
+  .navbarNav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin-right: 15px;
+  }
+  
+  .navLink {
+    color: #4d4c4c; /* White text color */
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease-in-out; /* Add transition to text color */
+  }
+  
+  .navLink:hover {
+    color: #adb5bd; /* Lighter color on hover */
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+  
+  /* Right section styles */
+  .searchBar {
+    display: flex;
+    align-items: center;
+    margin-left: 750px;
+    transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+  }
+  
+  .searchInput {
+    padding: 8px;
+    border: 1px solid #ced4da; /* Bootstrap's light gray border color */
+    border-radius: 20px;
+    width: 200px;
+  }
+  .micButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px;
+    margin-top: -5px;
+    position: absolute;
+    left: 1340px;
+    transition: margin-top 0.3s ease-in-out;
+  }
+  
+  
+  .micButton:hover {
+    background-color: transparent;
+  }
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Let the logo container grow to fill the available space */
+    margin-top: -70px; /* Adjust margin-top as needed */
+    transition: margin-top 0.3s ease-in-out; /* Add transition to margin-top */
+  }
+  
+  .logo {
+    position: absolute;
+    z-index: 1;
+    max-width: 250px;
+    max-height: 120px;
+    margin-left: -60px;
+    margin-top: -20px;
+    transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbarNav {
+      flex-direction: column;
+    }
+  
+    .navList {
+      margin-top: 10px;
+    }
+  
+    .navItem {
+      margin-bottom: 10px;
+    }
+  
+    .rightt {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+      margin-left: auto;
+    }
+  
+    .searchBar {
+      margin-left: auto !important;
+      transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+    }
+  
+    .micButton {
+      margin-left: 5px !important;
+      transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+    }
+  
+    .loginButton {
+      margin-right: 200px !important;
+      transition: margin-right 0.3s ease-in-out; /* Add transition to margin-right */
+    }
+  
+    .logoContainer {
+      margin-top: initial;
+      transition: margin-top 0.3s ease-in-out; /* Add transition to margin-top */
+    }
+  
+    .logo {
+      margin-left: initial;
+      transition: margin-left 0.3s ease-in-out; /* Add transition to margin-left */
+    }
+  }
+  .loginButton {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: linear-gradient(-45deg, #f8f9fa, #000000);
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition to background color and text color */
+  }
+  
+  .loginButton:hover {
+    background-color: #ffffff;
+    color: #343a40; /* Dark background color */
+  }
+  
+
+  .butt {
+    color: white;
+    background-color: #4CAF50; /* Green color, you can customize this */
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Add transition for a smooth effect */
+    width: 90px;
+   
+    
+
+    /* Add hover effect */
+}
+.butt:hover {
+    background-color: #45a049; /* Darker shade of green on hover, customize as needed */
+}
